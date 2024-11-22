@@ -52,6 +52,7 @@ nav a {
 
 h1 {
     color: var(--h1-color);
+    font-family: "Montserrat", sans-serif;
 }
 
 main img {

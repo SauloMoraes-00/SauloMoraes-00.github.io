@@ -230,20 +230,24 @@ figcaption {
 footer {
     background-color: var(--primary-color);
     color: white;
-    text-align: left; /* Aligns text to the left */
     padding: 20px;
     display: flex;
-    justify-content: space-between; /* Spaces out the text and social icons */
+    justify-content: center; /* Centers the content (text) */
     align-items: center; /* Vertically aligns the text and icons */
+    position: relative; /* Allows positioning of the social icons */
 }
 
 footer p {
     font-size: 0.9rem;
+    text-align: center; /* Centers the text */
+    margin-right: auto; /* Ensures the text stays centered */
 }
 
 footer nav.social-links {
     display: flex;
     gap: 15px; /* Space between the social media icons */
+    position: absolute;
+    right: 20px; /* Position the social icons to the far right */
 }
 
 footer nav a {
@@ -260,6 +264,7 @@ footer nav img {
 footer nav img:hover {
     transform: scale(1.1); /* Enlarges the image on hover */
 }
+
 
 
 @media (max-width: 768px) {

@@ -115,25 +115,24 @@ main article p {
     padding: 10px 20px;
 }
 
-.center-image {
-    display: block; /* Makes the image a block element */
-    margin: 20px auto; /* Centers it horizontally and adds vertical space */
-    max-width: 20%; /* Optional: You can adjust the max width as needed */
-    height: auto; /* Maintains the aspect ratio */
+/* History content section with flex layout */
+.history-content {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Center vertically */
+    gap: 20px; /* Gap between text and image */
 }
 
-/* Flexbox container for text and image */
-section {
-    margin: 30px 20px;
-    padding: 20px;
-    border: 2px solid var(--secondary-color);
-    border-radius: 5px;
-    background-color: white;
-    display: flex; /* Enables Flexbox */
-    flex-wrap: wrap; /* Allows items to wrap if needed */
-    gap: 20px; /* Space between text and image */
-    justify-content: space-between; /* Space between the elements */
-    align-items: center; /* Centers items vertically */
+.history-content p {
+    flex: 1; /* Ensure the text takes up available space */
+    font-size: 1rem;
+    color: var(--accent1-color);
+}
+
+.history-image {
+    max-width: 200px; /* Adjust image size */
+    height: auto;
+    border-radius: 8px;
 }
 
 section h2 {

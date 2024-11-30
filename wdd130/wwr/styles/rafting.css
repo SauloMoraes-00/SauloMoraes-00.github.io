@@ -177,18 +177,42 @@ section img {
     justify-items: center; /* Aligns items in the center */
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.rafting-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically adjusts columns */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Aligns items in the center of each grid cell */
+    max-width: 1200px; /* Optional: You can limit the max width of the grid */
+    width: 100%;
+}
+
 figure {
-    margin: 0; /* Removes default margin from figure */
+    margin: 0;
     padding: 10px;
     text-align: center;
     border-radius: 8px;
-    overflow: hidden; /* Ensures the image fits inside the figure */
+    overflow: hidden;
+    display: flex;  /* Make the figure a flex container */
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: center; /* Vertically center the content (image and caption) */
+    align-items: center; /* Horizontally center the content */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 figure img {
-    width: 100%;
+    max-width: 100%;  /* Make sure the image fills the width of the figure */
     height: auto;
+    display: block; /* Ensures the image is treated as a block element */
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
@@ -202,6 +226,7 @@ figcaption {
     color: var(--primary-color);
     margin-top: 10px;
 }
+
 
 footer {
     background-color: var(--primary-color);

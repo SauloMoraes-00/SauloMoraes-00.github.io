@@ -115,6 +115,13 @@ main article p {
     padding: 10px 20px;
 }
 
+.center-image {
+    display: block; /* Makes the image a block element */
+    margin: 20px auto; /* Centers it horizontally and adds vertical space */
+    max-width: 80%; /* Optional: You can adjust the max width as needed */
+    height: auto; /* Maintains the aspect ratio */
+}
+
 section {
     margin: 30px 20px;
     padding: 20px;

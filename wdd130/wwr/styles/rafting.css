@@ -21,11 +21,10 @@ body {
 header {
     background-color: var(--primary-color);
     color: white;
-    display: grid;
-    grid-template-columns: auto 1fr; /* Grid layout for image and navigation */
+    display: flex; /* Flex layout for header */
     align-items: center;
+    justify-content: space-between; /* Space between the image and the nav */
     padding: 10px 20px;
-    gap: 20px; /* Space between the logo and nav bar */
 }
 
 header img {
@@ -33,15 +32,13 @@ header img {
 }
 
 header nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: flex; /* Flex layout for navigation links */
+    gap: 15px; /* Space between navigation links */
 }
 
 header nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -177,8 +174,8 @@ footer nav img:hover {
 
 @media (max-width: 768px) {
     header {
-        grid-template-columns: 1fr; /* Stack logo and nav bar vertically */
-        text-align: center;
+        flex-direction: column; /* Stack image and nav bar vertically on small screens */
+        align-items: center;
     }
 
     header img {
@@ -186,7 +183,7 @@ footer nav img:hover {
     }
 
     header nav {
-        justify-content: center;
+        justify-content: center; /* Center navigation links on small screens */
     }
 
     .hero h1 {
@@ -197,3 +194,4 @@ footer nav img:hover {
         max-width: 150px;
     }
 }
+

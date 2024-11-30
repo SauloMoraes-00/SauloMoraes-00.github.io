@@ -34,8 +34,8 @@ header img {
 }
 
 header nav {
-    display: flex; /* Flex layout for navigation links */
-    gap: 15px; /* Space between navigation links */
+    display: flex; 
+    gap: 15px; 
 }
 
 header nav a {
@@ -115,22 +115,21 @@ main article p {
     padding: 10px 20px;
 }
 
-/* History content section with flex layout */
 .history-content {
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content: space-between; /* Space between text and image */
-    align-items: center; /* Center vertically */
-    gap: 20px; /* Gap between text and image */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
 }
 
 .history-content p {
-    flex: 1; /* Ensure the text takes up available space */
+    flex: 1; 
     font-size: 1rem;
     color: var(--accent1-color);
 }
 
 .history-image {
-    max-width: 200px; /* Adjust image size */
+    max-width: 200px;
     height: auto;
     border-radius: 8px;
 }
@@ -144,15 +143,15 @@ section h2 {
 }
 
 section {
-    margin: 30px 20px;  /* Margin between sections */
-    padding: 20px;       /* Padding inside the section */
+    margin: 30px 20px;  
+    padding: 20px;      
     border: 2px solid var(--secondary-color);
     border-radius: 5px;
     background-color: white;
 }
 
 section + section {
-    margin-top: 40px;  /* Adds extra space between consecutive sections */
+    margin-top: 40px;  
 }
 
 section p {
@@ -172,9 +171,9 @@ section img {
 
 .rafting-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically adjusts columns */
-    gap: 20px; /* Space between items */
-    justify-items: center; /* Aligns items in the center */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px; 
+    justify-items: center;
 }
 
 section {
@@ -189,10 +188,10 @@ section {
 
 .rafting-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically adjusts columns */
-    gap: 20px; /* Space between items */
-    justify-items: center; /* Aligns items in the center of each grid cell */
-    max-width: 1200px; /* Optional: You can limit the max width of the grid */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px;
+    justify-items: center; 
+    max-width: 1200px; 
     width: 100%;
 }
 
@@ -202,23 +201,23 @@ figure {
     text-align: center;
     border-radius: 8px;
     overflow: hidden;
-    display: flex;  /* Make the figure a flex container */
-    flex-direction: column; /* Stack the content vertically */
-    justify-content: center; /* Vertically center the content (image and caption) */
-    align-items: center; /* Horizontally center the content */
+    display: flex;  
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 figure img {
-    max-width: 100%;  /* Make sure the image fills the width of the figure */
+    max-width: 100%;  
     height: auto;
-    display: block; /* Ensures the image is treated as a block element */
+    display: block; 
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
 
 figure:hover img {
-    transform: scale(1.05); /* Enlarges the image on hover */
+    transform: scale(1.05);
 }
 
 figcaption {
@@ -232,22 +231,22 @@ footer {
     color: white;
     padding: 20px;
     display: flex;
-    justify-content: center; /* Centers the content (text) */
-    align-items: center; /* Vertically aligns the text and icons */
-    position: relative; /* Allows positioning of the social icons */
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
 }
 
 footer p {
     font-size: 0.9rem;
-    text-align: center; /* Centers the text */
-    margin: 0 auto; /* Centers the paragraph */
+    text-align: center; 
+    margin: 0 auto; 
 }
 
 footer nav.social-links {
     display: flex;
-    gap: 15px; /* Space between the social media icons */
+    gap: 15px; 
     position: absolute;
-    right: 20px; /* Position the social icons to the far right */
+    right: 20px; 
 }
 
 footer nav a {
@@ -262,13 +261,13 @@ footer nav img {
 }
 
 footer nav img:hover {
-    transform: scale(1.1); /* Enlarges the image on hover */
+    transform: scale(1.1); 
 }
 
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Stack image and nav bar vertically on small screens */
+        flex-direction: column; 
         align-items: center;
     }
 
@@ -277,7 +276,7 @@ footer nav img:hover {
     }
 
     header nav {
-        justify-content: center; /* Center navigation links on small screens */
+        justify-content: center; 
     }
 
     .hero h1 {

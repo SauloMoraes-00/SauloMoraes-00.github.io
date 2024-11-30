@@ -142,8 +142,22 @@ section h2 {
     font-size: 1.8rem;
 }
 
+section {
+    margin: 30px 20px;  /* Margin between sections */
+    padding: 20px;       /* Padding inside the section */
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    background-color: white;
+}
+
+section + section {
+    margin-top: 40px;  /* Adds extra space between consecutive sections */
+}
+
 section p {
     font-size: 1rem;
+    color: var(--accent1-color);
+    margin-bottom: 20px;
 }
 
 section img {

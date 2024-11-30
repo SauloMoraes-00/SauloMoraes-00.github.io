@@ -227,16 +227,27 @@ figcaption {
     margin-top: 10px;
 }
 
-
 footer {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack the paragraph and social icons vertically */
+    align-items: center;
 }
 
 footer p {
     font-size: 0.9rem;
+    margin-bottom: 10px; /* Adds space between the paragraph and the icons */
+}
+
+footer nav.social-links {
+    display: flex;
+    justify-content: flex-end; /* Align social media icons to the right */
+    gap: 15px; /* Space between the social media icons */
+    width: 100%; /* Ensures the nav takes up the full width of the footer */
+    max-width: 400px; /* Optional: You can limit the width of the social icons section */
 }
 
 footer nav a {
@@ -251,7 +262,7 @@ footer nav img {
 }
 
 footer nav img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Enlarges the image on hover */
 }
 
 @media (max-width: 768px) {

@@ -136,6 +136,7 @@ main article p {
 }
 
 section h2 {
+    position: absolute;
     font-family: 'Montserrat', sans-serif;
     color: var(--primary-color);
     margin-bottom: 15px;

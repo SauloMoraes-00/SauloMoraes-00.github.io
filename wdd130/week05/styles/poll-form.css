@@ -55,3 +55,11 @@ label, input, button, select, textarea {
     font-size: 1em; /* Tamanho consistente */
     line-height: 1.5; /* Melhor legibilidade */
 }
+label {
+    text-align: right;
+    padding: 1rem;
+}
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}

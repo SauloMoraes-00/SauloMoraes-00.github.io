@@ -21,3 +21,15 @@ header h1 {
     margin: 0; /* Remove default margin */
     font-weight: bold; /* Make the text bold */
 }
+
+form {
+    width: 80%; /* Adjust form width */
+    max-width: 600px; /* Restrict max width for large screens */
+    margin: 2em auto; /* Center form horizontally and add vertical spacing */
+    padding: 1.5em; /* Add space inside the form */
+    border: 1px solid #007BFF; /* Light blue border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #E3F2FD; /* Light blue background */
+    display: grid; /* Use grid layout */
+    gap: 1em; /* Add space between grid items */
+}

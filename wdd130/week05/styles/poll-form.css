@@ -69,3 +69,20 @@ input[type="checkbox"] {
     height: 22px0;
     vertical-align: bottom;
 }
+
+button {
+    padding: 1em 2em; /* Vertical and horizontal padding */
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2em; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scale */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}

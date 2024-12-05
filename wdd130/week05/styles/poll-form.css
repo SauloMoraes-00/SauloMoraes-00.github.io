@@ -34,3 +34,12 @@ form {
     gap: 1.5em; /* Increase spacing between grid items */
 }
 
+fieldset {
+    display: grid; /* Apply grid layout */
+    gap: 1.5em; /* Space between grid items */
+    border: 1px solid #007BFF; /* Light blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1.5em; /* Internal spacing */
+    background-color: #FFFFFF; /* White background for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}

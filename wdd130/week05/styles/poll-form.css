@@ -23,7 +23,7 @@ header h1 {
 }
 
 form {
-    width: 80%; /* Adjust form width */
+    width: 90%; /* Adjust form width */
     max-width: 600px; /* Restrict max width for large screens */
     margin: 2em auto; /* Center form horizontally and add vertical spacing */
     padding: 1.5em; /* Add space inside the form */

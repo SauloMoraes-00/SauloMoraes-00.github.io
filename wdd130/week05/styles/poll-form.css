@@ -9,3 +9,15 @@ body {
     color: #333;
     background: #fff;
 }
+header {
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center-align the text */
+    padding: 1em; /* Add some space inside the header */
+}
+
+header h1 {
+    font-size: 1.8em; /* Adjust font size */
+    margin: 0; /* Remove default margin */
+    font-weight: bold; /* Make the text bold */
+}

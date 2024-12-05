@@ -23,13 +23,14 @@ header h1 {
 }
 
 form {
-    width: 90%; /* Adjust form width */
-    max-width: 600px; /* Restrict max width for large screens */
-    margin: 2em auto; /* Center form horizontally and add vertical spacing */
-    padding: 1.5em; /* Add space inside the form */
+    width: 90%; /* Increase width */
+    max-width: 800px; /* Allow more space on large screens */
+    margin: 2em auto; /* Center form and add vertical spacing */
+    padding: 2em; /* Add more padding for spaciousness */
     border: 1px solid #007BFF; /* Light blue border */
     border-radius: 10px; /* Rounded corners */
     background-color: #E3F2FD; /* Light blue background */
     display: grid; /* Use grid layout */
-    gap: 1em; /* Add space between grid items */
+    gap: 1.5em; /* Increase spacing between grid items */
 }
+

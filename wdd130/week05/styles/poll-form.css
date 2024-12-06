@@ -105,3 +105,11 @@ footer p {
     display: grid; /* Apply grid layout */
     align-items: center; /* Center vertically */
 }
+
+.column1 {
+    display: grid; /* Apply grid layout */
+    grid-template-columns: 3fr 1fr; /* First column (label) is 3x the width of the second column */
+    gap: 1em; /* Space between columns */
+    margin-bottom: 1.5em; /* Space between each form item */
+    align-items: center; /* Center content vertically */
+}

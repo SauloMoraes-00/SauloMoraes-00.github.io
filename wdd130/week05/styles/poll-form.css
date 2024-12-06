@@ -100,3 +100,11 @@ footer {
 footer p {
     margin: 0; /* Remove default margin */
 }
+
+.form-item {
+    display: grid; /* Apply grid layout */
+    grid-template-columns: 1fr 2fr; /* Two columns: label (smaller) and input/select (larger) */
+    gap: 1em; /* Space between grid items */
+    align-items: center; /* Center vertically */
+    margin-bottom: 1em; /* Space between form items */
+}

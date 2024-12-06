@@ -113,3 +113,12 @@ footer p {
     margin-bottom: 1.5em; /* Space between each form item */
     align-items: center; /* Center content vertically */
 }
+
+.column2 {
+    display: grid; /* Apply grid layout */
+    grid-template-columns: 1fr 2fr; /* Label takes 1 part, input/select takes 2 parts */
+    gap: 1em; /* Space between columns */
+    margin-bottom: 1.5em; /* Space below each item */
+    align-items: start; /* Ensure items are aligned to the top */
+    text-align: left; /* Align text to the left */
+}

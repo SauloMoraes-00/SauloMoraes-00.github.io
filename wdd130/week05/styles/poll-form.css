@@ -56,7 +56,7 @@ label, input, button, select, textarea {
     line-height: 1.5; /* Melhor legibilidade */
 }
 label {
-    text-align: right;
+    text-align: left;
     padding: 1rem;
 }
 input, select, textarea {

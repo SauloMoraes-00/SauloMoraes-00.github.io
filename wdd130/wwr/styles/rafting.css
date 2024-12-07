@@ -343,7 +343,7 @@ footer nav img:hover {
 /* Newsletter checkbox styling */
 .contact.page .newsletter {
     display: flex;               /* Use flexbox to align the checkbox and label side by side */
-    align-items: right;         /* Vertically align items */
+    align-items: center;         /* Vertically align items */
     margin-bottom: 15px;
 }
 

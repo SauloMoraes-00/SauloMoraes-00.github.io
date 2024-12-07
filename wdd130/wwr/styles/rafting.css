@@ -360,19 +360,23 @@ footer nav img:hover {
 
 /* Newsletter checkbox styling */
 .contact.page .newsletter {
-    display: flex;               /* Use flexbox to align the checkbox and label side by side */
-    align-items: center;         /* Vertically align items */
+    display: grid;
+    grid-template-columns: auto 1fr; /* Checkbox in the first column, label text in the second */
+    gap: 10px; /* Add spacing between rows and columns */
+    align-items: center;
     margin-bottom: 15px;
 }
 
-.contact.page .newsletter input[type="checkbox"] {
-    margin-right: 10px;          /* Add some space between the checkbox and the text */
-}
-
 .contact.page .newsletter label {
+    margin: 0; /* Reset margin for a clean alignment */
     font-size: 1rem;
     color: var(--primary-color);
 }
+
+.contact.page .newsletter input[type="checkbox"] {
+    margin: 0; /* Reset default margin for alignment */
+}
+
 
 .contact.page .map-container {
     margin-top: 30px;

@@ -317,6 +317,24 @@ footer nav img:hover {
     background-color: #f9f9f9;
 }
 
+.contact.page form fieldset {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Label takes auto width, input takes the rest */
+    gap: 10px 20px; /* Add spacing between rows and columns */
+    align-items: center;
+    margin-bottom: 15px;
+    border: none; /* Remove border for clean appearance */
+    padding: 0;
+}
+
+.contact.page form fieldset legend {
+    grid-column: 1 / -1; /* Make the legend span across all columns */
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+
 .contact.page form input:focus,
 .contact.page form textarea:focus {
     border-color: var(--primary-color);

@@ -420,6 +420,7 @@ footer nav img:hover {
 /* Footer tweaks for contact page */
 .contact.page footer p {
     font-size: 1rem;
+    color: white;
     text-align: center;
     margin-top: 20px;
 }

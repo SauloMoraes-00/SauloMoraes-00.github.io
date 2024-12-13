@@ -98,28 +98,6 @@ header nav a:hover {
 }
 
 /* Section and grid styles */
-
-.history-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    text-align: left;
-}
-
-.history-content img {
-    max-width: 150px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.history-content p {
-    flex: 1;
-    margin: 0 10px;
-}
-
-
 section {
     margin: 30px 20px;
     padding: 20px;
@@ -168,20 +146,47 @@ figure:hover img {
     transform: scale(1.05);
 }
 
+.history-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: left;
+}
+
+.history-content img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-content p {
+    flex: 1;
+    margin: 0 10px;
+}
+
 /* Footer */
 footer {
     background-color: var(--primary-color);
     color: white;
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+    flex: 1;
+    text-align: center;
 }
 
 footer nav.social-links {
     display: flex;
     gap: 15px;
+    justify-content: flex-end;
 }
 
 footer nav img {

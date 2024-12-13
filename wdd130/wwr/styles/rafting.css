@@ -361,7 +361,35 @@ footer nav img:hover {
     background-color: var(--secondary-color);
 }
 
+/* Rafting section grid layout */
+.Rafting {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between grid items */
+    align-items: center;
+    justify-items: center;
+    margin: 20px 0;
+    text-align: left;
+}
 
+.Rafting p {
+    grid-column: span 2; /* Paragraph spans across two columns */
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.Rafting .Img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Rafting .Img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 /* Responsive styles */
 @media (max-width: 768px) {
     header {
@@ -380,4 +408,12 @@ footer nav img:hover {
     .contact.page .EmployPic figure {
         width: 45%;
     }
+    .Rafting {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .Rafting p {
+        grid-column: span 1; /* Paragraph spans one column */
+    }
+}
 }

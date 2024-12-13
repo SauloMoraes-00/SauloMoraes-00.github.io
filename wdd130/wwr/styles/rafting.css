@@ -206,6 +206,29 @@ footer nav img:hover {
     background-color: #f9f9f9;
 }
 
+.contact.page form fieldset {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    align-items: center;
+    margin-bottom: 15px;
+    border: none;
+    padding: 0;
+}
+
+.contact.page form fieldset legend {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.contact.page form input:focus,
+.contact.page form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
 .contact.page form button {
     background-color: var(--primary-color);
     color: white;
@@ -215,10 +238,60 @@ footer nav img:hover {
     font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .contact.page form button:hover {
     background-color: var(--secondary-color);
+}
+
+.contact.page .newsletter {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact.page .newsletter label {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.contact.page .newsletter input[type="checkbox"] {
+    margin: 0;
+}
+
+.contact.page .EmployPic {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact.page .EmployPic figure {
+    width: 30%;
+    margin: 15px;
+}
+
+.contact.page .EmployPic img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.contact.page .EmployPic figure:hover img {
+    transform: scale(1.05);
+}
+
+.contact.page .EmployPic figcaption {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-top: 10px;
+    text-align: center;
 }
 
 /* Responsive styles */

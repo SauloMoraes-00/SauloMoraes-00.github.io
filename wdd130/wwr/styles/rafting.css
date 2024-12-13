@@ -1,3 +1,4 @@
+/* Reset and global styles */
 * {
     margin: 0;
     padding: 0;
@@ -18,13 +19,15 @@ body {
     --accent2-color: #D4AB2F;
 }
 
+/* Header */
 header {
     background-color: var(--primary-color);
     color: white;
-    display: grid;
-    grid-template-columns: auto 1fr; 
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 20px;
+    flex-wrap: wrap;
 }
 
 header img {
@@ -35,8 +38,7 @@ header img {
 
 header nav {
     display: flex;
-    justify-content: flex-end; 
-    gap: 15px; 
+    gap: 15px;
 }
 
 header nav a {
@@ -51,6 +53,7 @@ header nav a:hover {
     color: var(--accent2-color);
 }
 
+/* Hero section */
 .hero {
     position: relative;
     text-align: center;
@@ -61,7 +64,6 @@ header nav a:hover {
 .hero img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .hero h1 {
@@ -85,80 +87,24 @@ header nav a:hover {
     color: var(--accent1-color);
     padding: 15px;
     border-radius: 5px;
-    width: 80%;
     text-align: center;
+    width: 80%;
 }
 
 .hero article img {
     width: 300px;
-    height: auto;
     float: right;
     margin: 0 0 10px 10px;
 }
 
-.hero article p {
-    text-align: justify;
-}
-
-main article {
-    text-align: center;
-    margin: 20px auto;
-}
-
-main article img {
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-main article p {
-    font-size: 1rem;
-    color: var(--accent1-color);
-    padding: 10px 20px;
-}
-
-.history-content {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    gap: 20px; 
-}
-
-.history-content p {
-    flex: 1; 
-    font-size: 1rem;
-    color: var(--accent1-color);
-}
-
-.history-image {
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-}
-
-section h2 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-}
-
+/* Section and grid styles */
 section {
-    margin: 30px 20px;  
-    padding: 20px;      
+    margin: 30px 20px;
+    padding: 20px;
     border: 2px solid var(--secondary-color);
     border-radius: 5px;
     background-color: white;
-}
-
-section + section {
-    margin-top: 40px;  
-}
-
-section p {
-    font-size: 1rem;
-    color: var(--accent1-color);
-    margin-bottom: 20px;
+    text-align: center;
 }
 
 section img {
@@ -172,28 +118,9 @@ section img {
 
 .rafting-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-    gap: 20px; 
-    justify-items: center;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-}
-
-.rafting-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    justify-items: center; 
-    max-width: 1200px; 
-    width: 100%;
+    justify-items: center;
 }
 
 figure {
@@ -202,17 +129,15 @@ figure {
     text-align: center;
     border-radius: 8px;
     overflow: hidden;
-    display: flex;  
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 figure img {
-    max-width: 100%;  
+    max-width: 100%;
     height: auto;
-    display: block; 
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
@@ -221,37 +146,20 @@ figure:hover img {
     transform: scale(1.05);
 }
 
-figcaption {
-    font-size: 1rem;
-    color: var(--primary-color);
-    margin-top: 10px;
-}
-
+/* Footer */
 footer {
     background-color: var(--primary-color);
     color: white;
     padding: 20px;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    position: relative; 
-}
-
-footer p {
-    font-size: 0.9rem;
-    text-align: center; 
-    margin: 0 auto; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 footer nav.social-links {
     display: flex;
-    gap: 15px; 
-    position: absolute;
-    right: 20px; 
-}
-
-footer nav a {
-    text-decoration: none;
+    gap: 15px;
 }
 
 footer nav img {
@@ -262,27 +170,13 @@ footer nav img {
 }
 
 footer nav img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
+/* Contact page */
 .contact.page {
-    background-color: #e6f7f7; /* Lighter background color for the contact page */
-}
-
-/* Styling for the Contact Us section */
-.contact.page h1 {
+    background-color: #e6f7f7;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.contact.page p {
-    text-align: center;
-    font-size: 1rem;
-    color: var(--accent1-color);
-    margin-bottom: 30px;
 }
 
 .contact.page form {
@@ -309,39 +203,10 @@ footer nav img:hover {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
-}
-
-.contact.page form input[type="text"],
-.contact.page form input[type="email"],
-.contact.page form textarea {
     background-color: #f9f9f9;
 }
 
-.contact.page form fieldset {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Label takes auto width, input takes the rest */
-    gap: 10px 20px; /* Add spacing between rows and columns */
-    align-items: center;
-    margin-bottom: 15px;
-    border: none; /* Remove border for clean appearance */
-    padding: 0;
-}
-
-.contact.page form fieldset legend {
-    grid-column: 1 / -1; /* Make the legend span across all columns */
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-
-.contact.page form input:focus,
-.contact.page form textarea:focus {
-    border-color: var(--primary-color);
-    outline: none;
-}
-
-.contact.page form button.submit-button {
+.contact.page form button {
     background-color: var(--primary-color);
     color: white;
     padding: 15px 30px;
@@ -350,141 +215,17 @@ footer nav img:hover {
     font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 100%;
-    margin-top: 20px;
 }
 
-.contact.page form button.submit-button:hover {
+.contact.page form button:hover {
     background-color: var(--secondary-color);
 }
 
-/* Newsletter checkbox styling */
-.contact.page .newsletter {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Checkbox in the first column, label text in the second */
-    gap: 10px; /* Add spacing between rows and columns */
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.contact.page .newsletter label {
-    margin: 0; /* Reset margin for a clean alignment */
-    font-size: 1rem;
-    color: var(--primary-color);
-}
-
-.contact.page .newsletter input[type="checkbox"] {
-    margin: 0; /* Reset default margin for alignment */
-}
-
-
-.contact.page .map-container {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.contact.page .EmployPic {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.contact.page .EmployPic figure {
-    width: 30%;
-    margin: 15px;
-}
-
-.contact.page .EmployPic img {
-    border-radius: 8px;
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.contact.page .EmployPic figure:hover img {
-    transform: scale(1.05);
-}
-
-.contact.page .EmployPic figcaption {
-    font-size: 1rem;
-    color: var(--primary-color);
-    margin-top: 10px;
-    text-align: center;
-}
-
-/* Footer tweaks for contact page */
-.contact.page footer p {
-    font-size: 1rem;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.contact.page footer nav.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.contact.page footer nav a {
-    text-decoration: none;
-}
-
-.contact.page footer nav img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-.contact.page footer nav img:hover {
-    transform: scale(1.1);
-}
-
-.contact.footer p a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact.footer p a:hover {
-    text-decoration: underline;
-}
-
-
+/* Responsive styles */
 @media (max-width: 768px) {
-    .contact.page form {
-        padding: 20px;
-    }
-
-    .contact.page .EmployPic figure {
-        width: 45%; /* Adjust for mobile */
-    }
-
-    .contact.page .EmployPic {
-        justify-content: center;
-    }
-
-    .contact.page .map-container iframe {
-        height: 250px;
-    }
     header {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
-    }
-
-    header img {
-        margin-bottom: 10px;
-    }
-
-    header nav {
-        justify-content: center; 
     }
 
     .hero h1 {
@@ -493,5 +234,9 @@ footer nav img:hover {
 
     section img {
         max-width: 150px;
+    }
+
+    .contact.page .EmployPic figure {
+        width: 45%;
     }
 }

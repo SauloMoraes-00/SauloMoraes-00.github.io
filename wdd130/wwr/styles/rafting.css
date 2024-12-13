@@ -321,6 +321,47 @@ footer nav img:hover {
     text-align: center;
 }
 
+/* Align Name and Email inputs in the same row */
+.index.page form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.index.page form label {
+    width: auto;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.index.page form input {
+    flex: 1 1 200px; /* Ensures the input fields are evenly spaced and responsive */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.index.page form input[type="submit"] {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.index.page form input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
     header {

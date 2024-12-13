@@ -98,6 +98,28 @@ header nav a:hover {
 }
 
 /* Section and grid styles */
+
+.history-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: left;
+}
+
+.history-content img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-content p {
+    flex: 1;
+    margin: 0 10px;
+}
+
+
 section {
     margin: 30px 20px;
     padding: 20px;

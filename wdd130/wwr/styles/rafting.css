@@ -117,10 +117,11 @@ section img {
 }
 
 .rafting-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    justify-items: center;
+    display: flex; /* Switch to flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between items */
+    justify-content: space-evenly; /* Distribute items evenly with equal space between */
+    align-items: center; /* Align items vertically */
 }
 
 figure {

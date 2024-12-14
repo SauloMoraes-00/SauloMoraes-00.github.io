@@ -117,11 +117,12 @@ section img {
 }
 
 .rafting-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    justify-items: center;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(5, 1fr); /* Create 5 equal columns */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center items horizontally within their grid cells */
 }
+
 
 figure {
     margin: 0;

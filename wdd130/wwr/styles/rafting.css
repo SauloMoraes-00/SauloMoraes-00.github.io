@@ -530,6 +530,32 @@ footer nav img:hover {
 .book-now:hover {
     background-color: var(--secondary-color);
 }
+.gallery-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-container2 .trip {
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-container2 .trip:hover {
+    transform: scale(1.05);
+}
+
+.gallery-container2 .trip img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
 
 /* Responsive styles */
 @media (max-width: 768px) {

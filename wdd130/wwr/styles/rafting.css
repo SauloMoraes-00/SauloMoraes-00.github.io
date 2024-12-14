@@ -531,13 +531,16 @@ footer nav img:hover {
     background-color: var(--secondary-color);
 }
 .gallery-container2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 10px; 
 }
 
 .gallery-container2 .trip {
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px); 
     text-align: center;
     padding: 10px;
     background-color: #f9f9f9;
@@ -556,6 +559,7 @@ footer nav img:hover {
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
 
 /* Responsive styles */
 @media (max-width: 768px) {

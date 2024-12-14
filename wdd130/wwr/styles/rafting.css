@@ -390,7 +390,7 @@ footer nav img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-/* Rafting Equipment Section Styles */
+/* Rafting Equipment Section with Images */
 .rafting-equipment {
     margin: 30px 20px;
     padding: 20px;
@@ -430,6 +430,32 @@ footer nav img:hover {
     color: var(--secondary-color);
     font-weight: bold;
 }
+
+/* Image Styles */
+.rafting-equipment img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin: 15px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rafting-equipment img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Container for Alignment */
+.rafting-equipment-images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
 
 /* Responsive styles */
 @media (max-width: 768px) {

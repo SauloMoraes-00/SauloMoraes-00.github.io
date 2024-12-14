@@ -471,25 +471,25 @@ footer nav img:hover {
     font-family: 'Montserrat', sans-serif;
     color: var(--primary-color);
     margin-bottom: 20px;
+    grid-column: 1 / -1; /* Spans the entire grid */
 }
 
-.trips-gallery {
+.gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
     gap: 20px;
     justify-content: center;
 }
 
-.trips-gallery .trip:nth-child(4) {
+.gallery-container .trip:nth-child(4) {
     grid-column: 2;
 }
 
-.trips-gallery .trip:nth-child(5) {
+.gallery-container .trip:nth-child(5) {
     grid-column: 3;
 }
 
-.trips-gallery .trip {
+.trip {
     text-align: center;
     padding: 10px;
     background-color: #f9f9f9;
@@ -498,24 +498,24 @@ footer nav img:hover {
     transition: transform 0.3s ease;
 }
 
-.trips-gallery .trip:hover {
+.trip:hover {
     transform: scale(1.05);
 }
 
-.trips-gallery img {
+.trip img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
-.trips-gallery h3 {
+.trip h3 {
     font-family: 'Lora', serif;
     color: var(--accent1-color);
     margin-bottom: 10px;
 }
 
-.trips-gallery .book-now {
+.book-now {
     padding: 10px 20px;
     background-color: var(--primary-color);
     color: white;
@@ -527,10 +527,9 @@ footer nav img:hover {
     transition: background-color 0.3s ease;
 }
 
-.trips-gallery .book-now:hover {
+.book-now:hover {
     background-color: var(--secondary-color);
 }
-
 
 /* Responsive styles */
 @media (max-width: 768px) {
